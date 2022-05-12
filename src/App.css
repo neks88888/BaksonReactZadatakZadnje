@@ -1,0 +1,163 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.image {
+  position: relative;
+
+}
+.image span {
+  position: absolute;
+  bottom: 9px;
+  left: 3px;
+  color:#bd1818;
+  text-shadow: #282c34;
+  margin-bottom: 0.5rem;
+}
+.left {
+  display: flex;
+}
+.flexing {
+  align-items: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 712px) {
+.flexing {
+  flex-direction: column;
+}
+}
+
+.date, .auth-width-height {
+ 
+  display: flex;  
+  flex-direction: column;
+  align-items: stretch;
+  height: 159px;
+  padding: 0 2rem;
+  
+  
+}
+.date div, .auth-width-height div {
+  
+  padding-left: 5%;
+  color: gray;
+  font-size: 2rem;
+}
+
+.auth-width-height div{
+  font-size: 1rem;
+}
+.link a {
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  padding: 8px;
+  border-radius: 5px ;
+}
+.image-author {
+  position: relative;
+}
+.image-author span {
+  position: absolute;
+  bottom: 5px;
+  left:5px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.flex {
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex2 {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .auth-width-height {
+    display: block;
+  }
+  .left {
+    flex-direction: column;
+      text-align: center;
+    padding-bottom: 3rem;
+}
+.flex {
+  flex-wrap: wrap;
+}
+.date {
+  margin-bottom: 0.5rem;
+}
+  
+  }
+
+  .card-title {
+ text-align: left;
+ color: #fff;
+ margin-top: -38px;
+ margin-left: 5px;
+
+  }
+  .search {
+    max-width: 30rem;
+   width: 100vw;
+    margin: 0 auto !important;
+
+  }
+
+  @media screen and (max-width: 900px) {
+  
+    .card {
+      width:45% !important;
+    }
+    }
+  @media screen and (max-width: 600px) {
+  
+  .card {
+    width:100% !important;
+  }
+  }
