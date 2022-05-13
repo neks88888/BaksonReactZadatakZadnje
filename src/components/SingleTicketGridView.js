@@ -18,10 +18,10 @@ function SingleTicketGridView(props) {
       <h5 className="card-title">{author}</h5>
       <div className="card-body">
         <p className="card-text">
-          <i class="fa-solid fa-calendar-week grid-icon"></i> {width}
+          <i className="fa-solid fa-calendar-week grid-icon"></i> {width}
         </p>
         <p className="card-text">
-          <i class="fa-solid fa-headphones-simple grid-icon"></i> {height}
+          <i className="fa-solid fa-headphones-simple grid-icon"></i> {height}
         </p>
       </div>
     </div>

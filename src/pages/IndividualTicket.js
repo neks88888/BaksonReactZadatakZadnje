@@ -15,7 +15,7 @@ function IndividualTicket() {
       <div className="card mb-3 karta-velika">
         <img className="card-img-top" src={cardImg} alt="Card image cap" />
         <div className="card-body">
-          <h5 className="card-title">Author: {indTick.author}</h5>
+          <h5 className="card-title">Author: {id ? indTick.author : "null"}</h5>
           <p className="card-text">Id: {indTick.id}</p>
           <p className="card-text"> Height: {indTick.height}</p>
           <p className="card-text">Width: {indTick.width}</p>

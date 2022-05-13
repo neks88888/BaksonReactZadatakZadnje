@@ -18,7 +18,6 @@ function App() {
       fetch("https://picsum.photos/v2/list?page=1&limit=12")
         .then((res) => res.json())
         .then((res) => setAllTickets(res));
-      console.log(allTickets);
     };
 
     fetchData();
@@ -69,11 +68,11 @@ function App() {
         <nav>
           <Link to="/">
             <span>
-              <i class="fa-solid fa-table-cells"></i>
+              <i className="fa-solid fa-table-cells"></i>
             </span>
           </Link>
           <Link to="/list">
-            <i class="fa-solid fa-list"></i>
+            <i className="fa-solid fa-list"></i>
           </Link>
         </nav>
         <Routes>

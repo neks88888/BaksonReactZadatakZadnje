@@ -29,11 +29,7 @@ function SingleTicket(props) {
         </div>
       </div>
       <div className="link">
-        <Link
-          to={`/singleticket/${id}`}
-          //target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link to={`/singleticket/${id}`} rel="noopener noreferrer">
           BUY TICKETS
         </Link>
       </div>
