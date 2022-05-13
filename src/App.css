@@ -78,13 +78,16 @@
 }
 .date div, .auth-width-height div {
   
-  padding-left: 5%;
+  /* padding-left: 5%;
+  padding: 1rem; */
   color: gray;
   font-size: 2rem;
 }
 
 .auth-width-height div{
   font-size: 1rem;
+  margin: 0;
+  padding: 0;
 }
 .link a {
   text-decoration: none;
@@ -132,6 +135,9 @@
 .date {
   margin-bottom: 0.5rem;
 }
+.date div, .auth-width-height div {
+  padding: .2rem;
+}
   
   }
 
@@ -161,3 +167,86 @@
     width:100% !important;
   }
   }
+
+  .karta-velika {
+    width: 40rem;
+    height: 40rem;
+    margin: 0 auto;
+  }
+  .karta-velika h5 {
+   color: #000;
+   margin-top: 1rem ;
+   text-align: center;
+  }
+
+
+  /* pagination */
+
+  /* .user {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #b3e3ff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    margin: 100px;
+  } */
+  
+  .paginationBttns {
+    margin-top: 5rem;
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+  }
+  
+  .paginationBttns a {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #2b2eff;
+    color: #2b2eff;
+    cursor: pointer;
+  }
+  
+  .paginationBttns a:hover {
+    color: white;
+    background-color: #2b2eff;
+  }
+  
+  .paginationActive a {
+    color: white;
+    background-color: #2b2eff;
+  }
+  
+  .paginationDisabled a {
+    pointer-events: auto! important;
+    cursor: not-allowed! important;
+  }
+
+  /* ---------------------------- end of pagination------------- */
+  .height {
+    height: 70vw;
+  }
+
+  i {
+    color: black;
+    font-size: 2rem;
+  }
+  nav {
+    margin: 0 auto;
+    text-align: center;
+  }
+  nav i {
+    margin: .5rem 1rem;
+  }
+ i.grid-icon {
+   font-size: 1rem;
+ }
+ 

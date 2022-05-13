@@ -15,24 +15,26 @@ const List = () => {
     pageCount,
     changePage,
   } = useContext(TicketsContext);
-  const lw = searchAlgorithm(allTickets, searchTerm, SingleTicket, true).slice(
+  const lw = searchAlgorithm(searchTerm, SingleTicket, true).slice(
     pagesVisited,
     pagesVisited + ticketsPerPage
   );
   return (
     <React.Fragment>
-      <div className="flex2">{lw}</div>
-      <ReactPaginate
-        previousLabel={"Previous"}
-        nextLabel={"Next"}
-        pageCount={pageCount}
-        onPageChange={changePage}
-        containerClassName={"paginationBttns"}
-        previousLinkClassName={"previousBttn"}
-        nextLinkClassName={"nextBttn"}
-        disabledClassName={"paginationDisabled"}
-        activeClassName={"paginationActive"}
-      />
+      <div className="height">
+        <div className="flex2">{lw}</div>
+        <ReactPaginate
+          previousLabel={"Previous"}
+          nextLabel={"Next"}
+          pageCount={pageCount}
+          onPageChange={changePage}
+          containerClassName={"paginationBttns"}
+          previousLinkClassName={"previousBttn"}
+          nextLinkClassName={"nextBttn"}
+          disabledClassName={"paginationDisabled"}
+          activeClassName={"paginationActive"}
+        />
+      </div>
     </React.Fragment>
   );
 };

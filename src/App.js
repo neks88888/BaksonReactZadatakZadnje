@@ -24,8 +24,8 @@ function App() {
     fetchData();
   }, []);
 
-  const searchAlgorithm = (itemToFilter, searchTerm, Component, wb) => {
-    return itemToFilter
+  const searchAlgorithm = (searchTerm, Component, wb) => {
+    return allTickets
       .filter(
         (ticket) =>
           ticket.author.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -41,7 +41,7 @@ function App() {
   };
   const [pageNumber, setPageNumber] = useState(0);
 
-  const ticketsPerPage = 5;
+  const ticketsPerPage = 4;
   const pagesVisited = pageNumber * ticketsPerPage;
   const pageCount = Math.ceil(allTickets.length / ticketsPerPage);
 
@@ -67,15 +67,20 @@ function App() {
       >
         <SearchBar />
         <nav>
-          <Link to="/">Grid</Link>
-          <Link to="/list">List</Link>
+          <Link to="/">
+            <span>
+              <i class="fa-solid fa-table-cells"></i>
+            </span>
+          </Link>
+          <Link to="/list">
+            <i class="fa-solid fa-list"></i>
+          </Link>
         </nav>
         <Routes>
           <Route path="/" element={<Grid />} />
           <Route path="/list" element={<List />} />
           <Route path="/singleticket/:id" element={<IndividualTicket />} />
         </Routes>
-        <Footer />
       </TicketsContext.Provider>
     </Router>
   );
