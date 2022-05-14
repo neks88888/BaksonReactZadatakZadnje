@@ -3,20 +3,12 @@ import logo from "../image/image.jfif";
 import { Link } from "react-router-dom";
 
 function SingleTicketGridView(props) {
-  let { id, author, width, height } = props.data;
+  let { author, width, height } = props.data;
   return (
-    <div
-      className="card"
-      style={{
-        width: "22%",
-        height: "16rem",
-        margin: "0.2rem",
-        display: "block",
-      }}
-    >
+    <div className="card">
       <img className="card-img-top" src={logo} alt="Card image cap" />
       <h5 className="card-title">{author}</h5>
-      <div className="card-body">
+      <div className="card-body height-card">
         <p className="card-text">
           <i className="fa-solid fa-calendar-week grid-icon"></i> {width}
         </p>

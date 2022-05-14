@@ -1,8 +1,9 @@
 import React from "react";
 import logo from "../image/image.jfif";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function SingleTicket(props) {
+  let navigate = useNavigate();
   let { id, author, width, height } = props.data;
   const date = new Date(Date.now());
   const month = date.toLocaleString("default", { month: "long" });
